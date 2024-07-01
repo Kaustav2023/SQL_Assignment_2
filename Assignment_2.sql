@@ -8,7 +8,7 @@ SELECT TOP (1000) [customer_id]
       ,[zip]
   FROM [Assignment_2].[dbo].[customer]
 
---1. Create a customer table which comprises of these columns: ‘customer_id’, ‘first_name’, ‘last_name’, ‘email’, ‘address’, ‘city’,’state’,’zip’ 
+--1. Create a customer table which comprises of these columns: â€˜customer_idâ€™, â€˜first_nameâ€™, â€˜last_nameâ€™, â€˜emailâ€™, â€˜addressâ€™, â€˜cityâ€™,â€™stateâ€™,â€™zipâ€™ 
 Create Table Customer
 ( customer_iD int Primary Key,
   first_name varchar(20),
@@ -33,18 +33,19 @@ Insert into Customer
 Values 
 (6,	'Godfrey',	'Elden Lord',	'firsteldenlord@gmail.com',	'San Jose California',	'San Jose',	'U.S.A',	12345)
 
---3. Select only the ‘first_name’ and ‘last_name’ columns from the customer table
+--3. Select only the â€˜first_nameâ€™ and â€˜last_nameâ€™ columns from the customer table
 
 Select First_Name, Last_Name From Customer 
 
---4. Select those records where ‘first_name’ starts with “G” and city is ‘SanJose’. 
+--4. Select those records where â€˜first_nameâ€™ starts with â€œGâ€ and city is â€˜SanJoseâ€™. 
 
 Select * from Customer Where First_Name LIKE 'G%' AND City='SAN JOSE'
 
---5. Select those records where Email has only ‘gmail’. 
+--5. Select those records where Email has only â€˜gmailâ€™. 
 
 Select * from Customer where Email LIKE '%gmail%'
 
---6. Select those records where the ‘last_name’ doesn't end with “A”.
+--6. Select those records where the â€˜last_nameâ€™ doesn't end with â€œAâ€.
 
 Select * from Customer where Last_Name LIKE '%a'
+Select * from Customer
